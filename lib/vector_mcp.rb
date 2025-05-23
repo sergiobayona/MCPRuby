@@ -8,9 +8,10 @@ require_relative "vector_mcp/errors"
 require_relative "vector_mcp/definitions"
 require_relative "vector_mcp/session"
 require_relative "vector_mcp/util"
+require_relative "vector_mcp/image_util"
 require_relative "vector_mcp/handlers/core"
 require_relative "vector_mcp/transport/stdio"
-require_relative "vector_mcp/transport/sse"
+# require_relative "vector_mcp/transport/sse" # Load on demand to avoid async dependencies
 require_relative "vector_mcp/server"
 
 # The VectorMCP module provides a full-featured, opinionated Ruby implementation
